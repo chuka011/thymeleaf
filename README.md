@@ -11,3 +11,4 @@ Attributes in Thymeleaf:
 - th:each - iterate over List, Set, Map, Array (status variable in iteration, provided by Thymeleaf)
 - th:if, th:unless - conditions attributes
 - th:switch, th:case - switch-case
+- th:action, th:object, th:field - form attributes
