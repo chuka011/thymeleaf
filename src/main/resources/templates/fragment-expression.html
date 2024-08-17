@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragment expression</title>
+</head>
+<body>
+  <p th:replace="~{common/header :: header-fragment}"></p>
+  <h1>Fragment Expressions Demo:</h1>
+  <p th:insert="~{common/footer :: footer-fragment}"></p>
+</body>
+</html>
