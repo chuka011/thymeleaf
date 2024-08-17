@@ -12,15 +12,13 @@ public class UserController {
 
     @GetMapping("/variable-expression")
     public String variableExpression(Model model) {
-        User user = new User("Bane", "bane@gmail.com", "ADMIN", "male");
-        model.addAttribute("user", user);
+        model.addAttribute("user", getUserList().getFirst());
         return "variable-expression";
     }
 
     @GetMapping("/selection-expression")
     public String selectionExpression(Model model) {
-        User user = new User("Bane", "bane@gmail.com", "ADMIN", "male");
-        model.addAttribute("user", user);
+        model.addAttribute("user", getUserList().getFirst());
         return "selection-expression";
     }
 
@@ -50,6 +48,12 @@ public class UserController {
     public String ifUnless(Model model) {
         model.addAttribute("users", getUserList());
         return "if-unless";
+    }
+
+    @GetMapping("/switch-case")
+    public String switchCase(Model model) {
+        model.addAttribute("user", getUserList().getFirst());
+        return "switch-case";
     }
 
     private static List<User> getUserList() {
