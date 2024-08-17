@@ -9,3 +9,4 @@ Standard expressions in Thymeleaf:
 Attributes in Thymeleaf:
 - th:text - evaluate expression and replace text in tag body 
 - th:each - iterate over List, Set, Map, Array (status variable in iteration, provided by Thymeleaf)
+- th:if, th:unless - conditions attributes
